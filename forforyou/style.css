@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+body{
+    background: black;
+    overflow-x: hidden;
+    padding: 120px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    justify-content: end;
+    box-shadow: 0 2px 10px aqua;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    object-fit: contain;
+}
+
+.header p#logo{
+    font-size: 50px;
+    font-weight: 900;
+    font-family: "Rubik Scribble", system-ui;
+    color: white;
+    display: flex;
+    justify-content: start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px 9%;
+    z-index: 100;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-left: 20px;
+    padding: 15px 10px;
+    display: flex;
+    justify-items: flex-end;
+    display: inline-block;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: 0.2s ease;
+}
+
+.navbar ul li:hover a {
+    color: aqua;
+    border-bottom: 2px solid aqua;
+}
+
+.navbar ul li:active a {
+    color: aliceblue;
+}
+
+p#name {
+        color: white;
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        max-width: 600px;       
+        line-height: 1.6;
+        text-align: center;
+        margin: 0 auto;   
+        
+}
+
+p#description {
+    display: flex;
+        flex-direction: row;    
+        align-items: center;   
+        justify-content: center;
+        gap: 40px;              
+        height: 100vh;
+        padding: 10%;
+}
+#kendrell {
+    margin: 20px;
+    height: 400px;
+    border-radius: 20px;
+    border: none;
+    animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes glow {
+    50%{box-shadow: 0 0 20px aqua;}
+}
+
+.about {
+    margin: 100px;
+}
+
+.about h1 {
+    color: white;
+    margin: 30px;
+}
+p.aboutme {
+    border: inset;
+    border-radius: 30px;
+    border-color: aqua;
+    color: white;
+    font-weight: 300;
+    font-size: x-large;
+    padding: 20px 10px;
+    border-width: 5px;
+}
+.project h1 {
+    color: white;
+    margin: 30px;
+}
+h1.project{
+    color: white;
+    margin: 30px;
+}
+
+p.project {
+    color: white;
+    border: inset;
+    border-color: aqua;
+    border-radius: 30px;
+    font-weight: 300;
+    font-size: large;
+    padding: 15px 10px;
+    border-width: 5px;
+}
+
+a#btn {
+    border: 2px solid aqua;
+    border-radius: 30px;
+    padding: 10px 20px; 
+    margin-top: 15px;
+    color: white;
+    background-color: rgb(18, 72, 107);
+    text-decoration: none; 
+    display: inline-block;
+}
+a#btn:hover {
+    background-color: aqua;
+    transition: 0.3s ease;
+}
+
+.myskills h1 {
+    color: white;
+    margin: 30px;
+}
+
+
+.skills-section {
+    padding: 50px 20px;
+    background-color: black; 
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+
+.skill-container {
+    max-width: 600px;
+    margin: 0 auto; 
+    text-align: left;
+}
+
+.skill-box {
+    margin-bottom: 25px;
+}
+
+
+.skill-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+.progress-bar-bg {
+    width: 100%;
+    height: 12px;
+    background-color: #333;
+    border-radius: 20px;
+    overflow: hidden; 
+    border: 1px solid #555;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: aqua;
+    border-radius: 20px;
+    width: 0;
+    animation: loadBar 2s ease-out forwards;
+}
+
+.html-fill { width: 65%; }
+.css-fill  { width: 65%; }
+.c-fill   { width: 75%; }
+
+@keyframes loadBar {
+    from {
+        width: 0;
+    }
+}
+
+h1#hobbiesh1 {
+    margin: 30px    ;
+}
+
+.hobbies-section {
+    padding: 50px 20px;
+    background-color: black; 
+    color: white;
+    text-align: center;
+    margin: 30px;
+}
+
+.hobbies-container {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+.hobby-card {
+    background-color: #1f1f1f; 
+    border: 2px solid #333;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex; 
+    align-items: center;
+    text-align: left;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateX(10px); 
+    border-color: aqua; 
+}
+
+.hobby-icon {
+    font-size: 40px;
+    color: aqua;
+    margin-right: 20px;
+    min-width: 50px; 
+    text-align: center;
+}
+
+.hobby-text h3 {
+    margin: 0 0 5px 0;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.hobby-text p {
+    margin: 0;
+    color: #ccc; 
+    font-size: 0.9rem;
+}
+
+.contact-section {
+    padding: 50px 20px;
+    background-color: #111; 
+    color: white;
+    text-align: center;
+    border-top: 2px solid aqua; 
+}
+
+.contact-section h1 {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin: 20px 0;
+}
+
+.social-links a {
+    display: inline-block;
+    font-size: 30px; 
+    color: white;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: aqua; 
+}
+
+.email {
+    font-family: monospace;
+    font-size: 1.1rem;
+    color: #ccc;
+}
